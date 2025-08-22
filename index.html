@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Requisito 10: Etiquetas Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Nike con video e imagen, siguiendo los requerimientos del proyecto.">
+    <title>Nike: Video e Imagen</title>
+</head>
+<!-- Requisito 2: Fondo sin usar CSS -->
+<body bgcolor="#e0e0e0">
+
+    <!-- Requisito 10: Etiqueta Header -->
+    <header>
+        <!-- Requisito 1: Títulos y Subtítulos -->
+        <h1>Nike: Innovación y Deporte</h1>
+        <h2>Explora nuestra historia y productos</h2>
+    </header>
+
+    <!-- Requisito 3: Menú para movilizarse a las secciones -->
+    <nav>
+        <p>
+            <a href="#introduccion">Introducción</a> |
+            <a href="#multimedia">Multimedia Nike</a> |
+            <a href="#contacto">Contacto</a>
+        </p>
+    </nav>
+
+    <main>
+        <!-- Sección 1: Introducción -->
+        <section id="introduccion">
+            <h3>Introducción a Nike</h3>
+            <!-- Requisito 9: Textos con negrita, color y subrayados -->
+            <p>
+                Nike, Inc. es una empresa <b><font color="red">líder mundial</font></b> en el diseño, desarrollo y comercialización de calzado, ropa, equipamiento y accesorios deportivos. Su sede se encuentra en Oregón, Estados Unidos.
+            </p>
+            <p>
+                <u>Desde su fundación en 1964</u>, Nike ha sido sinónimo de innovación y rendimiento.
+            </p>
+            <!-- Requisito 9: Texto con icono (usando un emoji) -->
+            <p>&#128170; ¡Supera tus límites con Nike!</p>
+        </section>
+
+        <hr>
+
+        <!-- Sección 2: Multimedia Nike -->
+        <section id="multimedia">
+            <h3>Multimedia de Nike</h3>
+            
+            <h4>Video Inspirador</h4>
+            <!-- Requisito 6: Hipervínculo a video (incrustado) -->
+            <p>Mira este video sobre la filosofía de Nike:</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WA4dDs0T7sM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <h4>Imagen de Producto</h4>
+            <!-- Requisito 7: 2 imágenes (una local y otra con hipervínculo ) -->
+            <!-- Aquí usamos una imagen de URL como la "imagen con hipervínculo" -->
+            <p>Una de nuestras zapatillas más icónicas:</p>
+            <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/b7d9211c-26e7-431a-ac24-b0540fb3c00f/air-force-1-07-zapatillas-GjGXSP.png" alt="Nike Air Force 1" width="400">
+            
+            <!-- Para la "imagen local", necesitarías tener un archivo de imagen en la misma carpeta, por ejemplo, "nike_logo.png" -->
+            <p>Nuestro logo (imagen local - si tienes el archivo "nike_logo.png" ):</p>
+            <img src="nike_logo.png" alt="Logo de Nike" width="150">
+
+            <!-- Requisito 5: Hipervínculo a la página del Sena -->
+            <p>Si te interesa la formación técnica, visita la página del <a href="https://www.sena.edu.co/" target="_blank">SENA</a>.</p>
+
+            <!-- Requisito 8: Una tabla -->
+            <h4>Modelos Populares</h4>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Categoría</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nike Air Max</td>
+                        <td>Correr</td>
+                    </tr>
+                    <tr>
+                        <td>Nike Dunk</td>
+                        <td>Estilo de vida</td>
+                    </tr>
+                    <tr>
+                        <td>Nike Metcon</td>
+                        <td>Capacitación</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Sección 3: Formulario de Contacto -->
+        <section id="contacto">
+            <h3>Contáctanos</h3>
+            <!-- Requisito 4: Formulario con campos y botón de envío -->
+            <form>
+                <p>Nombre Completo (Cuadro de texto ): <input type="text" name="nombre" size="40"></p>
+                <p>Fecha de Consulta (Fechas): <input type="date" name="fecha_consulta"></p>
+                <p>
+                    <input type="checkbox" name="suscripcion"> Deseo suscribirme al boletín de noticias (Checkbox)
+                </p>
+                <p>
+                    ¿Cómo nos conociste? (Radio Button)  
+
+                    <input type="radio" name="como_conociste" value="amigo"> Por un amigo
+                    <input type="radio" name="como_conociste" value="publicidad"> Publicidad
+                    <input type="radio" name="como_conociste" value="otro"> Otro
+                </p>
+                <!-- Botón de envío -->
+                <input type="submit" value="Enviar Consulta">
+            </form>
+        </section>
+    </main>
+
+    <!-- Requisito 10: Etiqueta Footer -->
+    <footer>
+        <p>&copy; 2025 - Página de ejemplo de Nike. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
